@@ -8,6 +8,8 @@ This program is a simple calendar application that allows a user to save events 
 
 The following screenshot demonstrates the application functionality:
 
+![Mock-Up of the work day scheduler](./demo.png)
+
 ## Links
 
 - [Deployed Link](https://hyanez.github.io/HW5-WORK-DAY-SCHEDULER/)

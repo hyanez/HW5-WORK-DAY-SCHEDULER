@@ -1,4 +1,3 @@
-console.log("scripts linked");
 //DEPENDENCIES
 //connect to time
 var firstTimeBlock = $("#first-time-block");
@@ -10,6 +9,7 @@ var sixthTimeBlock = $("#sixth-time-block");
 var seventhTimeBlock = $("#seventh-time-block");
 var eighthTimeBlock = $("#eighth-time-block");
 var ninthTimeBlock = $("#ninth-time-block");
+
 // connect to save button
 var firstButton = $("#first-button");
 var secondButton = $("#second-button");
@@ -20,6 +20,7 @@ var sixthButton = $("#sixth-button");
 var seventhButton = $("#seventh-button");
 var eighthButton = $("#eighth-button");
 var ninthButton = $("#ninth-button");
+
 // connect to the text area
 var firstTextArea = $("#first-text-area");
 var secondTextArea = $("#second-text-area");
@@ -30,11 +31,8 @@ var sixthTextArea = $("#sixth-text-area");
 var seventhTextArea = $("#seventh-text-area");
 var eighthTextArea = $("#eighth-text-area");
 var ninthTextArea = $("#ninth-text-area");
-// connect to moment.js (clock)
-// connect to header
 
 var hour = moment().format("k");
-//console.log(hour);
 
 // DATA
 // current time to print to screen (header)
@@ -53,7 +51,7 @@ function getCurrentTime() {
   }
   if (hour < 10) {
     secondTextArea.addClass("future");
-  } else if (hour === 10) {
+  } else if (hour == 10) {
     secondTextArea.addClass("present");
   } else if (hour > 10) {
     secondTextArea.addClass("past");
